@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Management</title>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Stock Management System</h1>
+    
+    <!-- Form to add products -->
+    <form id="product-form" onsubmit="return addProduct(event)">
+        <input type="text" id="product-name" placeholder="Product Name" required>
+        <input type="number" id="product-quantity" placeholder="Quantity" required>
+        <button type="submit">Add Product</button>
+    </form>
+
+
+
+
+    <script src="index.js"></script>
+        <!-- Section to display products -->
+        <h2>Current Stock</h2>
+        <ul id="product-list"></ul>
+    
+</body>
+</html>
+
